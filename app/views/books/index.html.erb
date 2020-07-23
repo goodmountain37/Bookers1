@@ -1,3 +1,4 @@
+<p id="notice">Book was successfully crearted.</p>
 <h1>Books</h1>
 <table>
   <thead>
@@ -22,12 +23,12 @@
 <h2>New book</h2>
 <%= form_for(@book) do |book| %>
   <div class="field">
-    <%= book.label :book_title, "Title" %>
-    <%= book.text_field :book_title %>
+    <%= book.label :title, "Title" %>
+    <%= book.text_field :title %>
   </div>
   <div class="field">
-    <%= book.label :book_body, "Body" %>
-    <%= book.text_area :book_body %>
+    <%= book.label :body, "Body" %>
+    <%= book.text_area :body %>
   </div>
   <%= book.submit 'Create Book' %>
 <% end %>
